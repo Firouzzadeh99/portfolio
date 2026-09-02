@@ -1,0 +1,6 @@
+[build]
+  command = "pnpm run build" # Or your build command, e.g., "npm run build"
+  publish = ".next" # The output directory for Next.js builds
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
