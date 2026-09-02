@@ -1,10 +1,11 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { assetPath } from "@/lib/asset-path";
 
 export const CodingLottie = ({ className }) => {
     return (
         <div className={`${className}`}>
             <DotLottieReact
-                src="/lottie/developer-ai.lottie"
+                src={assetPath("/lottie/developer-ai.lottie")}
                 loop
                 autoplay
                 // className="w-full h-full"

@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { IconDownload, IconX } from "@tabler/icons-react";
+import { assetPath } from "@/lib/asset-path";
 import { cn } from "@/lib/utils";
 
 interface ResumePreviewModalProps {
@@ -20,7 +21,7 @@ export function ResumePreviewModal({
     onClose,
     resumePath,
     fileName,
-    imageSrc = "/resume/resume-high-quality.png",
+    imageSrc = assetPath("/resume/resume-high-quality.png"),
 }: ResumePreviewModalProps) {
     const [imgLoaded, setImgLoaded] = useState(false);
     const [mounted, setMounted] = useState(false);

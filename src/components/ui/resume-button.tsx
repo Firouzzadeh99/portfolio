@@ -4,6 +4,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { IconChevronDown, IconEye, IconDownload } from "@tabler/icons-react";
+import { assetPath } from "@/lib/asset-path";
 import { cn } from "@/lib/utils";
 import { ResumePreviewModal } from "./resume-preview-modal";
 
@@ -24,7 +25,7 @@ export function ResumeButton({
     const [modalOpen, setModalOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
-    const resumePath = `/${fileName}`;
+    const resumePath = assetPath(`/${fileName}`);
 
     // Close the dropdown when clicking outside it
     useEffect(() => {

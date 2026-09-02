@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLenis } from "lenis/react";
+import { assetPath } from "@/lib/asset-path";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { ModeToggle } from "@/components/ui/theme-toggle";
@@ -27,7 +28,7 @@ export const MobileNavbar = () => {
 
     const lenis = useLenis();
 
-    const resumePath = `/${RESUME_FILE}`;
+    const resumePath = assetPath(`/${RESUME_FILE}`);
 
     useEffect(() => {
         if (!open) return;

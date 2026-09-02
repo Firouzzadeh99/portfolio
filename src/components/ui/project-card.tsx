@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Project } from "@/types/project";
 import { FiGithub } from "react-icons/fi";
+import { assetPath } from "@/lib/asset-path";
 
 const categoryStyles: any = {
   Frontend: "bg-gradient-to-r from-blue-500 to-cyan-600",
@@ -25,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Preview */}
       <div className="relative h-48 w-full shrink-0 overflow-hidden">
         <Image
-          src={image}
+          src={assetPath(image)}
           alt={title}
           fill
           className="object-cover  transition-transform duration-300 group-hover:scale-105"

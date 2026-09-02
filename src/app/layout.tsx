@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://firouzzadeh99.github.io/Portfolio/"),
+    metadataBase: new URL("https://firouzzadeh99.github.io/portfolio/"),
     title: {
         default: "Masoumeh Firouzzadeh | Full-Stack Developer",
         template: "%s | Masoumeh Firouzzadeh",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         "Web Developer Portfolio",
         "Software Engineer",
     ],
-    authors: [{ name: "Masoumeh Firouzzadeh", url: "https://firouzzadeh99.github.io/Portfolio/" }],
+    authors: [{ name: "Masoumeh Firouzzadeh", url: "https://firouzzadeh99.github.io/portfolio/" }],
     creator: "Masoumeh Firouzzadeh",
     publisher: "Masoumeh Firouzzadeh",
     robots: {
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         follow: true,
     },
     alternates: {
-        canonical: "https://firouzzadeh99.github.io/Portfolio/",
+        canonical: "https://firouzzadeh99.github.io/portfolio/",
     },
     openGraph: {
         title: "Masoumeh Firouzzadeh | Full-Stack Developer",
         description:
             "Personal portfolio of Masoumeh Firouzzadeh, a Full-Stack Developer specializing in Next.js, React, and TypeScript.",
-        url: "https://firouzzadeh99.github.io/Portfolio/",
+        url: "https://firouzzadeh99.github.io/portfolio/",
         siteName: "Masoumeh Firouzzadeh",
         type: "website",
         locale: "en_US",

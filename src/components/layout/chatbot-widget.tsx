@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Bot, Send, Sparkles, X } from "lucide-react";
 import useSound from "use-sound";
+import { assetPath } from "@/lib/asset-path";
 import { motion } from "motion/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -44,7 +45,7 @@ export default function ChatbotWidget({
     const hintRef = useRef<HTMLDivElement | null>(null);
     const [hasTriggeredHint, setHasTriggeredHint] = useState(false);
 
-    const [playDing] = useSound("/ding.mp3", {
+    const [playDing] = useSound(assetPath("/ding.mp3"), {
         volume: 0.5,
         onerror: () => console.log("Sound file not found"),
     });
